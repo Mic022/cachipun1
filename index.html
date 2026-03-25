@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cachipún</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <h1>Cachipún</h1>
+    <p>Primero en ganar 3 rondas gana el juego</p>
+
+    <div id="marcador">
+      <span>Tu: <strong id="pts-jugador">0</strong></span>
+      <span> — </span>
+      <span>sofIA: <strong id="pts-sofIA">0</strong></span>
+    </div>
+
+    <div id="jugadas">
+      <span id="mano-jugador">?</span>
+      <span>vs</span>
+      <span id="mano-sofIA">?</span>
+    </div>
+
+    <div id="resultado">Elige tu jugada y presiona Jugar</div>
+
+    <div id="controles">
+      <label for="seleccion">Tu jugada:</label>
+      <select id="seleccion">
+        <option value="piedra"> Piedra</option>
+        <option value="papel"> Papel</option>
+        <option value="tijera"> Tijera</option>
+      </select>
+      <button id="btn-jugar">Jugar</button>
+    </div>
+
+    <div id="historial">
+      <h3>Historial</h3>
+      <ul id="lista-historial">
+        <li>El historial aparecera aqui</li>
+      </ul>
+    </div>
+
+    <div id="modal" class="oculto">
+      <div id="modal-caja">
+        <p id="modal-mensaje"></p>
+        <button id="btn-reiniciar">Jugar de nuevo</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>          
+</html>  
