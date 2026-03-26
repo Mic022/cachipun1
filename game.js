@@ -11,7 +11,7 @@ function elegirCPU() {
 }
 
 function evaluar(jugador, sofIA) {
-    if (jugador === sofIA) return "Empateichon";
+    if (jugador === sofIA) return "draw";
     return GANA_A[jugador] === sofIA ? "win" : "lose";
 }
 
@@ -69,7 +69,7 @@ function reiniciar() {
     document.getElementById("mano-sofIA").textContent     = "?";
     document.getElementById("resultado").textContent    = "Elige tu jugada y presiona Jugar";
     document.getElementById("resultado").className      = "";
-    document.getElementById("lista-historial").innerHTML = "<li>El historial aparecerá aquí…</li>";
+    document.getElementById("lista-historial").innerHTML = "<li>El historial aparecerá aqui</li>";
     document.getElementById("modal").classList.add("oculto");
     document.getElementById("btn-jugar").disabled = false;
 }
